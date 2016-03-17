@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=lxdaw
+Comment=lxdaw - LXSession meets AwesomeWM (by raffitz)
+Exec=/usr/bin/startlxdaw
+# Icon=
+Type=Application
