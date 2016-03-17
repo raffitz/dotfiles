@@ -1,0 +1,15 @@
+gvim
+zsh
+git
+lightdm
+lightdm-gtk-greeter
+awesome
+xorg-server
+xorg-server-utils
+xorg-xinit
+tmux
+networkmanager
+ttf-dejavu
+network-manager-applet
+xterm
+rxvt-unicode
