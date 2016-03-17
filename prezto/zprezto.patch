@@ -1,0 +1,91 @@
+diff --git a/runcoms/zlogin b/runcoms/zlogin
+index 30549f3..e4b9a7a 100644
+--- a/runcoms/zlogin
++++ b/runcoms/zlogin
+@@ -15,9 +15,9 @@
+ } &!
+ 
+ # Print a random, hopefully interesting, adage.
+-if (( $+commands[fortune] )); then
+-  if [[ -t 0 || -t 1 ]]; then
+-    fortune -s
+-    print
+-  fi
+-fi
++#if (( $+commands[fortune] )); then
++#  if [[ -t 0 || -t 1 ]]; then
++#    fortune -s
++#    print
++#  fi
++#fi
+diff --git a/runcoms/zlogout b/runcoms/zlogout
+index 7c27e88..c61bbf3 100644
+--- a/runcoms/zlogout
++++ b/runcoms/zlogout
+@@ -5,9 +5,3 @@
+ #   Sorin Ionescu <sorin.ionescu@gmail.com>
+ #
+ 
+-# Print the message.
+-cat <<-EOF
+-
+-Thank you. Come again!
+-  -- Dr. Apu Nahasapeemapetilon
+-EOF
+diff --git a/runcoms/zpreztorc b/runcoms/zpreztorc
+index 4778944..aecf61c 100644
+--- a/runcoms/zpreztorc
++++ b/runcoms/zpreztorc
+@@ -15,6 +15,8 @@
+ # Color output (auto set to 'no' on dumb terminals).
+ zstyle ':prezto:*:*' color 'yes'
+ 
++zstyle ':completion:*' rehash true
++
+ # Set the Zsh modules to load (man zshmodules).
+ # zstyle ':prezto:load' zmodule 'attr' 'stat'
+ 
+@@ -24,6 +26,7 @@ zstyle ':prezto:*:*' color 'yes'
+ # Set the Prezto modules to load (browse modules).
+ # The order matters.
+ zstyle ':prezto:load' pmodule \
++  'git' \
+   'environment' \
+   'terminal' \
+   'editor' \
+@@ -32,6 +35,9 @@ zstyle ':prezto:load' pmodule \
+   'spectrum' \
+   'utility' \
+   'completion' \
++  'pacman' \
++  'syntax-highlighting' \
++  'history-substring-search' \
+   'prompt'
+ 
+ #
+diff --git a/runcoms/zprofile b/runcoms/zprofile
+index d87cb3b..9341d64 100644
+--- a/runcoms/zprofile
++++ b/runcoms/zprofile
+@@ -17,8 +17,8 @@ fi
+ # Editors
+ #
+ 
+-export EDITOR='nano'
+-export VISUAL='nano'
++export EDITOR='vim'
++export VISUAL='vim'
+ export PAGER='less'
+ 
+ #
+diff --git a/runcoms/zshrc b/runcoms/zshrc
+index 039b882..9612f06 100644
+--- a/runcoms/zshrc
++++ b/runcoms/zshrc
+@@ -10,4 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+ fi
+ 
++unalias rm
++
+ # Customize to your needs...
