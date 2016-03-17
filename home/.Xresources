@@ -1,0 +1,77 @@
+Xcursor.theme: OpenZone_Black
+
+URxvt*.depth: 32
+URxvt*font:  xft:Terminess Powerline:size=11, xft:Segoe UI Emoji:size=7
+URxvt*scrollBar: false
+
+
+! special
+!URxvt*foreground:   #659fdb
+!URxvt*background:   rgba:0000/0000/0000/cccc
+!URxvt*cursorColor:   #659fdb
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
+
+! --- special colors ---
+
+URxvt*background: rgba:0b0b/1d1d/2e2e/cccc
+URxvt*foreground: #d9e6f2
+
+! --- standard colors ---
+
+! black
+URxvt*color0: #0b1d2e
+
+! bright_black
+URxvt*color8: #2e4051
+
+! red
+URxvt*color1: #da49ab
+
+! bright_red
+URxvt*color9: #da9ed5
+
+! green
+URxvt*color2: #88ec5a
+
+! bright_green
+URxvt*color10: #b3ecaf
+
+! yellow
+URxvt*color3: #da9a5a
+
+! bright_yellow
+URxvt*color11: #dac5af
+
+! blue
+URxvt*color4: #379afc
+
+! bright_blue
+URxvt*color12: #8cc5fc
+
+! magenta
+URxvt*color5: #8849fc
+
+! bright_magenta
+URxvt*color13: #b39efc
+
+! cyan
+URxvt*color6: #37ecab
+
+! bright_cyan
+URxvt*color14: #8cecd5
+
+! white
+URxvt*color7: #baccdd
+
+! bright_white
+URxvt*color15: #daecfc
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------

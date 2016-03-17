@@ -1,0 +1,19 @@
+#!/bin/sh
+
+xrdb -merge ~/.Xresources
+xset s off &
+xset -dpms &
+
+xbindkeys &
+
+xcompmgr &
+
+numlockx &
+
+export EDITOR=vim
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+ibus-daemon --xim --daemonize
