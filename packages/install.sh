@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S $(cat pkg-list)
+sudo pacman -Syu $(cat pkg-list)
