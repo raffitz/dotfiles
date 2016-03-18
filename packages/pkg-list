@@ -7,6 +7,7 @@ awesome
 xorg-server
 xorg-server-utils
 xorg-xinit
+xf86-input-synaptics
 tmux
 networkmanager
 ttf-dejavu
