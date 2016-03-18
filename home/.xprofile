@@ -8,8 +8,6 @@ xbindkeys &
 
 xcompmgr &
 
-numlockx &
-
 export EDITOR=vim
 
 export GTK_IM_MODULE=ibus
