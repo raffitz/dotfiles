@@ -30,3 +30,8 @@ echo "Removing packer directory..."
 rm -rf packer
 
 
+echo "Installing AUR packages..."
+
+packer -S $(cat packer-list)
+
+
