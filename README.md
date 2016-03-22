@@ -11,6 +11,7 @@ The target platform is an Arch Linux desktop PC with the base and base-devel pac
 To install all packages included in the Arch repositories, the following is needed:
 
 > cd packages
+
 > ./install.sh
 
 Further, the _xf86-video_ package associated to your graphics drivers is required as well.
@@ -20,6 +21,7 @@ Further, the _xf86-video_ package associated to your graphics drivers is require
 To install the _packer_ front-end, and subsequently install other AUR packages, the following is needed:
 
 > cd packer
+
 > ./install.sh
 
 ### zsh + prezto
@@ -29,7 +31,9 @@ My shell of choice is _zsh_. It is recommended that the user in question have it
 To configure it as I would, the following is needed:
 
 > cd prezto
+
 > ./install.zsh
+
 > ./patch.sh
 
 ### Awesome Window Manager
@@ -37,6 +41,7 @@ To configure it as I would, the following is needed:
 To configure the Awesome Window Manager with my theme of choice, the following is needed:
 
 > cd awesome
+
 > ./configure.sh
 
 ### Further configurations
