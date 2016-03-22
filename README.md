@@ -2,7 +2,9 @@
 My ghetto dotfiles repo
 
 ## Target Platform
-The target platform is an Arch Linux desktop PC with the base and base-devel package groups installed.
+The target platform is an Arch Linux laptop PC with the base and base-devel package groups installed.
+
+The main difference from the desktop branch is the removal of numlockx from .xprofile.
 
 ## Instalation
 
