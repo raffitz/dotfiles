@@ -33,7 +33,7 @@ index 7c27e88..c61bbf3 100644
 -  -- Dr. Apu Nahasapeemapetilon
 -EOF
 diff --git a/runcoms/zpreztorc b/runcoms/zpreztorc
-index 4778944..aecf61c 100644
+index e93ac6b..3b44f19 100644
 --- a/runcoms/zpreztorc
 +++ b/runcoms/zpreztorc
 @@ -15,6 +15,8 @@
@@ -63,8 +63,17 @@ index 4778944..aecf61c 100644
    'prompt'
  
  #
+@@ -46,7 +52,7 @@ zstyle ':prezto:load' pmodule \
+ #
+ 
+ # Set the key mapping style to 'emacs' or 'vi'.
+-zstyle ':prezto:module:editor' key-bindings 'emacs'
++zstyle ':prezto:module:editor' key-bindings 'vi'
+ 
+ # Auto convert .... to ../..
+ # zstyle ':prezto:module:editor' dot-expansion 'yes'
 diff --git a/runcoms/zprofile b/runcoms/zprofile
-index d87cb3b..9341d64 100644
+index d87cb3b..260b8aa 100644
 --- a/runcoms/zprofile
 +++ b/runcoms/zprofile
 @@ -17,8 +17,8 @@ fi
@@ -73,19 +82,20 @@ index d87cb3b..9341d64 100644
  
 -export EDITOR='nano'
 -export VISUAL='nano'
-+export EDITOR='vim'
-+export VISUAL='vim'
++export EDITOR='nvim'
++export VISUAL='nvim'
  export PAGER='less'
  
  #
 diff --git a/runcoms/zshrc b/runcoms/zshrc
-index 039b882..9612f06 100644
+index 039b882..44dca98 100644
 --- a/runcoms/zshrc
 +++ b/runcoms/zshrc
-@@ -10,4 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+@@ -10,4 +10,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
    source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
  fi
  
 +unalias rm
++alias vim=nvim
 +
  # Customize to your needs...

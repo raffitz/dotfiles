@@ -1,4 +1,4 @@
-gvim
+neovim
 zsh
 git
 lightdm
@@ -38,4 +38,5 @@ ttf-symbola
 unzip
 unrar
 wget
+xclip
 
