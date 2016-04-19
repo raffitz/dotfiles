@@ -46,6 +46,9 @@ To configure the Awesome Window Manager with my theme of choice, the following i
 
 ### Further configurations
 
-The configuration files for the remaining packages and utilities can be sent to its respective places through the deploy script.
+The configuration files for the remaining packages and utilities can be sent to their respective places through the deploy script.
+
+> cd files
 
 > ./deploy.sh
+
