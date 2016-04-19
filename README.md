@@ -2,7 +2,7 @@
 My ghetto dotfiles repo
 
 ## Target Platform
-The target platform is an Arch Linux desktop PC with the base and base-devel package groups installed.
+The target platform is an Arch Linux OS running on a Raspberry Pi.
 
 ## Instalation
 
@@ -11,16 +11,6 @@ The target platform is an Arch Linux desktop PC with the base and base-devel pac
 To install all packages included in the Arch repositories, the following is needed:
 
 > cd packages
-
-> ./install.sh
-
-Further, the _xf86-video_ package associated to your graphics drivers is required as well.
-
-### Required AUR packages
-
-To install the _packer_ front-end, and subsequently install other AUR packages, the following is needed:
-
-> cd packer
 
 > ./install.sh
 
@@ -35,14 +25,6 @@ To configure it as I would, the following is needed:
 > ./install.zsh
 
 > ./patch.sh
-
-### Awesome Window Manager
-
-To configure the Awesome Window Manager with my theme of choice, the following is needed:
-
-> cd awesome
-
-> ./configure.sh
 
 ### Further configurations
 
