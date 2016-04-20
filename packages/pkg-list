@@ -38,7 +38,7 @@ unzip
 unrar
 wget
 xclip
-lighttpd
+nginx
 openvpn
 easy-rsa
 sqlite
