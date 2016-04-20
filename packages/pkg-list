@@ -39,4 +39,6 @@ unrar
 wget
 xclip
 lighttpd
+openvpn
+easy-rsa
 
