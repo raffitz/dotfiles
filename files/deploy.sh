@@ -10,5 +10,17 @@ sudo cp -r usr/* /usr/
 cp -r home/. ~/
 
 # Clone repos
-while read in; do git clone --recursive $in ; done < git_repos
+while read in; do
+	arr=($in)
+	CURDIR=$(pwd)
+	cd $HOME
+	if [ -d ${arr[1]} ]; then
+		echo ${arr[1]}
+		cd ${arr[1]}
+		git pull
+	else
+		git clone --recursive $in
+	fi
+	cd $CURDIR ; done < git_repos
+
 

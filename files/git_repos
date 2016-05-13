@@ -1,2 +1,2 @@
-https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-https://github.com/VundleVim/Vundle.vim ~/.config/nvim/bundle
+https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
+https://github.com/VundleVim/Vundle.vim .config/nvim/bundle/Vundle.vim
