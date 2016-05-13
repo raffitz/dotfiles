@@ -11,4 +11,5 @@ unzip
 unrar
 wget
 ddclient
+curl
 
