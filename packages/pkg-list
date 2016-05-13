@@ -38,5 +38,6 @@ ttf-symbola
 unzip
 unrar
 wget
+curl
 xclip
 
