@@ -37,6 +37,7 @@ ttf-symbola
 unzip
 unrar
 wget
+curl
 xclip
 nginx
 openvpn
