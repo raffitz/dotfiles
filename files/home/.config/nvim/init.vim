@@ -36,3 +36,6 @@ set showcmd
 " TeX flavour is LaTeX
 let g:tex_flavor='latex'
 
+" Numbering
+set rnu
+set number
