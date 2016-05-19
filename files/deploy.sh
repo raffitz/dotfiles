@@ -1,9 +1,14 @@
 #!/bin/sh
 
+# Interrupt script on first failure
+set -e
+
 # Copy etc configs
+echo "Copying /etc/ ..."
 sudo cp -r etc/* /etc/
 
 # Copy usr binaries, scripts and files
+echo "Copying /usr/ ..."
 sudo cp -r usr/* /usr/
 
 # Copy server data
@@ -13,9 +18,11 @@ sudo cp -r srv/* /srv/
 sudo chown -R gogs:gogs /srv/gogs
 
 # Copy home dotfiles
+echo "Copying $HOME/ ..."
 cp -r home/. ~/
 
 # Clone repos
+echo "Cloning git repos..."
 while read in; do
 	arr=($in)
 	CURDIR=$(pwd)
