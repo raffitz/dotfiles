@@ -1,12 +1,18 @@
 #!/bin/sh
 
+# Interrupt script on first failure
+set -e
+
 # Copy etc configs
+echo "Copying /etc/ ..."
 sudo cp -r etc/* /etc/
 
 # Copy home dotfiles
+echo "Copying $HOME/ ..."
 cp -r home/. ~/
 
 # Clone repos
+echo "Cloning git repos..."
 while read in; do
 	arr=($in)
 	CURDIR=$(pwd)
