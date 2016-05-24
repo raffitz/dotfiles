@@ -11,12 +11,6 @@ sudo cp -r etc/* /etc/
 echo "Copying /usr/ ..."
 sudo cp -r usr/* /usr/
 
-# Copy server data
-sudo cp -r srv/* /srv/
-
-# Copy gogs stuff
-sudo chown -R gogs:gogs /srv/gogs
-
 # Copy home dotfiles
 echo "Copying $HOME/ ..."
 cp -r home/. ~/
