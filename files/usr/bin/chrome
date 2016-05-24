@@ -1,0 +1,12 @@
+#!/bin/sh
+
+CHROME_FLAGS="--ignore-gpu-blacklist --new-window $*"
+
+if [[ "$DISPLAY" = ":0" ]]; then
+	google-chrome-stable $CHROME_FLAGS
+else
+	PROFILE="session$DISPLAY"
+	IFS=" "
+
+	google-chrome-stable --user-data-dir=$HOME/.google-chrome/$PROFILE $CHROME_FLAGS
+fi
