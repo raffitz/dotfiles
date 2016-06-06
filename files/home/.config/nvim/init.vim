@@ -17,6 +17,7 @@ Plugin 'tpope/vim-obsession'
 Plugin 'sirtaj/vim-openscad'
 Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 "
