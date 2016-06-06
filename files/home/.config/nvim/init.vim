@@ -14,6 +14,10 @@ call vundle#begin('~/.config/nvim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
+Plugin 'sirtaj/vim-openscad'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 "
