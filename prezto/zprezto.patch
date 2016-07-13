@@ -88,7 +88,7 @@ index d87cb3b..260b8aa 100644
  
  #
 diff --git a/runcoms/zshrc b/runcoms/zshrc
-index 039b882..8be496e 100644
+index 039b882..4c103e9 100644
 --- a/runcoms/zshrc
 +++ b/runcoms/zshrc
 @@ -10,4 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -98,5 +98,5 @@ index 039b882..8be496e 100644
 +unalias rm
 +alias vim=nvim
 +
-+GPG_TTY=$( tty )
++export GPG_TTY=`tty`
  # Customize to your needs...
