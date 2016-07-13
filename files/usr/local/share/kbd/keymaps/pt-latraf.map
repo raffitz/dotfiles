@@ -2,6 +2,8 @@
 #
 # With fixes for keycode 18 and 29 from jcm@netcabo.pt, 20010715.
 #
+# With some keyswaps by and for raffitz
+#
 charset "iso-8859-15"
 keymaps 0-2,4,6,8,12
 alt_is_meta
@@ -67,9 +69,10 @@ keycode  54 = Shift
 keycode  56 = Alt
 keycode  57 = space
 	control	keycode  57 = nul
-keycode  58 = Caps_Lock
+keycode  58 = Escape
 keycode  86 = less             greater          bar
 keycode  97 = Control
+keycode 127 = Incr_Console
 compose 'e' '=' to '¤'
 compose '-' 'e' to '¤'
 compose '-' 'E' to '¤'
