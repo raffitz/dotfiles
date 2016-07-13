@@ -7,6 +7,8 @@ awesome
 xorg-server
 xorg-server-utils
 xorg-xinit
+xorg-xev
+xorg-xmodmap
 tmux
 networkmanager
 ttf-dejavu
