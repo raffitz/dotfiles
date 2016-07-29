@@ -18,6 +18,7 @@ Plugin 'sirtaj/vim-openscad'
 Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 "
@@ -43,6 +44,7 @@ let g:tex_flavor='latex'
 " Numbering
 set rnu
 set number
+set ruler
 
 " Allow for hidden buffers
 set hidden
