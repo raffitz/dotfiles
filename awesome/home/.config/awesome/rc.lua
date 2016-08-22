@@ -170,6 +170,53 @@ mytasklist.buttons = awful.util.table.join(
                                               if client.focus then client.focus:raise() end
                                           end))
 
+---- ALSA volume widget
+-- taken from https://awesome.naquadah.org/wiki/Volume_Widget_icon
+alsa_channel = "Master" -- Adapt if needed
+i_dir = "/usr/share/icons/nuoveXT2/24x24/status/" -- Adapt to the location of your freedesktop icon
+alsawidget = wibox.widget.imagebox()
+alsawidget_tip = awful.tooltip({ objects = { alsawidget }})
+
+function volume(action)
+  local mixer	
+  if action == "+" or action == "-" then
+    mixer = awful.util.pread("amixer sset " .. alsa_channel .. " 5%" .. action) --change the step to you taste
+  elseif action == "toggle" then
+    mixer = awful.util.pread("amixer sset " .. alsa_channel .. " " .. action)
+  else
+    mixer = awful.util.pread("amixer get " .. alsa_channel)
+  end
+  local volu, mute = string.match(mixer, "([%d]+)%%.*%[([%l]*)")
+  if volu == nil or (mute == "" and volu == "0") or mute == "off" then
+    alsawidget:set_image(i_dir .. "audio-volume-muted.png")
+    alsawidget_tip:set_text("[Muted]")
+  else
+    if tonumber(volu) >= 66 then
+      alsawidget:set_image(i_dir .. "audio-volume-high.png")
+    elseif tonumber(volu) >= 33 then
+      alsawidget:set_image(i_dir .. "audio-volume-medium.png")
+    else
+      alsawidget:set_image(i_dir .. "audio-volume-low.png")
+    end
+    alsawidget_tip:set_text(alsa_channel .. ": " .. volu .. "%")
+  end
+end
+
+volume("set") -- set the icon and tooltip at startup or restart
+
+-- mouse bindings
+alsawidget:buttons(awful.util.table.join(
+  awful.button({ }, 1, function() --click to (un)mute
+    volume("toggle")
+  end),
+  awful.button({ }, 4, function() --wheel to rise or reduce volume
+    volume("+")
+  end),
+  awful.button({ }, 5, function()
+    volume("-")
+  end)
+))
+
 for s = 1, screen.count() do
     -- Create a promptbox for each screen
     mypromptbox[s] = awful.widget.prompt()
@@ -199,6 +246,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(alsawidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
