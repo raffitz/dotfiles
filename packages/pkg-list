@@ -4,6 +4,7 @@ git
 lightdm
 lightdm-gtk-greeter
 awesome
+vicious
 xorg-server
 xorg-server-utils
 xorg-xinit
