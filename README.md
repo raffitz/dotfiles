@@ -24,17 +24,15 @@ To install the _packer_ front-end, and subsequently install other AUR packages, 
 
 > ./install.sh
 
-### zsh + prezto
+### zsh + zim
 
 My shell of choice is _zsh_. It is recommended that the user in question have it as default shell.
 
 To configure it as I would, the following is needed:
 
-> cd prezto
+> cd zim
 
 > ./install.zsh
-
-> ./patch.sh
 
 ### Awesome Window Manager
 
