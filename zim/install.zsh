@@ -22,4 +22,4 @@ cat .zimrc > ${ZDOTDIR:-${HOME}}/.zimrc
 
 # Add stuff to .zshrc:
 
-echo "export EDITOR=\"nvim\"\nexport VISUAL=\"nvim\"\n" >> ~/.zshrc
+echo "\n\nexport EDITOR=\"nvim\"\nexport VISUAL=\"nvim\"\n" >> ~/.zshrc
