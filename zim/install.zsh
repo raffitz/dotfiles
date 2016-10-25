@@ -19,3 +19,7 @@ sudo cp ${ZDOTDIR:-${HOME}}/.ztheme/prompt_simple-s_setup /usr/share/zsh/functio
 
 # Override .zimrc
 cat .zimrc > ${ZDOTDIR:-${HOME}}/.zimrc
+
+# Add stuff to .zshrc:
+
+echo "export EDITOR=\"nvim\"\nexport VISUAL=\"nvim\"\n" >> ~/.zshrc
