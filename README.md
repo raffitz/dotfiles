@@ -4,6 +4,8 @@ My ghetto dotfiles repo
 ## Target Platform
 The target platform is an Arch Linux desktop PC with the base and base-devel package groups installed.
 
+This is a headless configuration for a server.
+
 ## Instalation
 
 ### Required packages
@@ -13,8 +15,6 @@ To install all packages included in the Arch repositories, the following is need
 > cd packages
 
 > ./install.sh
-
-Further, the _xf86-video_ package associated to your graphics drivers is required as well.
 
 ### Required AUR packages
 
@@ -33,14 +33,6 @@ To configure it as I would, the following is needed:
 > cd zim
 
 > ./install.zsh
-
-### Awesome Window Manager
-
-To configure the Awesome Window Manager with my theme of choice, the following is needed:
-
-> cd awesome
-
-> ./configure.sh
 
 ### Further configurations
 
