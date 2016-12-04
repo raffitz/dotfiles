@@ -98,15 +98,18 @@ end
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "browser", "chrome" },
-   { "logout", "lxsession-logout" },
-   { "power down", "shutdown -h now" },
-   { "reboot", "reboot" },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+				    { "browser", "chrome" },
+				    { "telegram", "telegram-desktop" },
+				    { "slack", "slack" },
+				    { "steam", "/home/raffitz/bin/startsteam.sh" },
+				    { "logout", "lxsession-logout" },
+				    { "reboot", "reboot" },
+				    { "power down", "shutdown -h now" },
                                     { "open terminal", terminal }
                                   }
                         })
