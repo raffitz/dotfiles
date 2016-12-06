@@ -102,11 +102,15 @@ myawesomemenu = {
    { "quit", awesome.quit }
 }
 
+myappsmenu = {
+   { "browser", "chrome" },
+   { "telegram", "telegram-desktop" },
+   { "slack", "slack" },
+   { "steam", "/home/raffitz/bin/startsteam.sh" }
+}
+
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-				    { "browser", "chrome" },
-				    { "telegram", "telegram-desktop" },
-				    { "slack", "slack" },
-				    { "steam", "/home/raffitz/bin/startsteam.sh" },
+				    { "apps", myappsmenu, beautiful.awesome_icon },
 				    { "logout", "lxsession-logout" },
 				    { "reboot", "reboot" },
 				    { "power down", "shutdown -h now" },
