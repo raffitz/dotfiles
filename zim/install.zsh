@@ -1,10 +1,12 @@
 #!/bin/zsh
 
+OWD=$(pwd)
 # Clone repo:
 ZIMDIR="${ZDOTDIR:-${HOME}}/.zim"
 if [ -d ${ZIMDIR} ]; then
 	cd ${ZIMDIR}
 	git pull
+	cd ${OWD}
 else
 	git clone --recursive https://github.com/Eriner/zim.git ${ZIMDIR}
 fi
@@ -22,6 +24,7 @@ THEMEDIR="${ZDOTDIR:-${HOME}}/.ztheme"
 if [ -d ${THEMEDIR} ]; then
 	cd ${THEMEDIR}
 	git pull
+	cd ${OWD}
 else
 	git clone --recursive https://github.com/raffitz/simple-s.git ${THEMEDIR}
 fi
@@ -30,7 +33,7 @@ fi
 sudo cp ${ZDOTDIR:-${HOME}}/.ztheme/prompt_simple-s_setup /usr/share/zsh/functions/Prompts
 
 # Override .zimrc
-cat .zimrc > ${ZDOTDIR:-${HOME}}/.zimrc
+cp -a home/. ~
 
 # Override .zshrc :
 
