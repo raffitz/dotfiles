@@ -12,10 +12,3 @@ fi
 export EDITOR="nvim"
 export VISUAL="nvim"
 export GPG_TTY=$(tty)
-
-alias hl="highlight -O xterm256"
-
-show () {
-	hl $@ | less -R -N
-}
-
