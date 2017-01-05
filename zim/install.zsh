@@ -32,31 +32,6 @@ fi
 # Install theme:
 sudo cp ${ZDOTDIR:-${HOME}}/.ztheme/prompt_simple-s_setup /usr/share/zsh/functions/Prompts
 
-# Override .zimrc
+# Copy config files to $HOME
 cp -a home/. ~
-
-# Override .zshrc :
-
-echo "
-
-#
-# User configuration sourced by interactive shells
-#
-
-# Source zim
-if [[ -s \${ZDOTDIR:-\${HOME}}/.zim/init.zsh ]]; then
-  source \${ZDOTDIR:-\${HOME}}/.zim/init.zsh
-fi
-
-export EDITOR=\"nvim\"
-export VISUAL=\"nvim\"
-export GPG_TTY=\$(tty)
-
-alias hl=\"highlight -O xterm256\"
-
-show () {
-	hl \$@ | less -R -N
-}
-" >! ~/.zshrc
-
 
