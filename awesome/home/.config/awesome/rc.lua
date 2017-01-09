@@ -112,7 +112,8 @@ myappsmenu = {
    { "internet", myappsinternetmenu },
    { "shutter", "shutter" },
    { "steam", "/home/raffitz/bin/startsteam.sh" },
-   { "open terminal", terminal }
+   { "file manager", "pcmanfm" },
+   { "terminal", terminal }
 }
 
 mypowermenu = {
