@@ -102,14 +102,13 @@ myawesomemenu = {
    { "quit", awesome.quit }
 }
 
-myappsinternetmenu = {
+myinternetmenu = {
    { "browser", "chrome" },
    { "telegram", "telegram-desktop" },
    { "slack", "slack" }
 }
 
 myappsmenu = {
-   { "internet", myapsinternetmenu },
    { "shutter", "shutter" },
    { "steam", "/home/raffitz/bin/startsteam.sh" },
    { "open terminal", terminal }
@@ -122,6 +121,7 @@ mypowermenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "internet", myapsinternetmenu },
 				    { "apps", myappsmenu},
 				    { "power", mypowermenu},
                                   }
