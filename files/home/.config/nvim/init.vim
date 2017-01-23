@@ -48,3 +48,7 @@ set ruler
 
 " Allow for hidden buffers
 set hidden
+
+" Whenever words are added to the dictionary, a local version is preferred by
+" default
+set spellfile=./en.utf-8.add
