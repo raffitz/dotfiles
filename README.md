@@ -14,17 +14,15 @@ To install all packages included in the Arch repositories, the following is need
 
 > ./install.sh
 
-### zsh + prezto
+### zsh + zim
 
 My shell of choice is _zsh_. It is recommended that the user in question have it as default shell.
 
 To configure it as I would, the following is needed:
 
-> cd prezto
+> cd zim
 
 > ./install.zsh
-
-> ./patch.sh
 
 ### Further configurations
 
