@@ -36,7 +36,7 @@ xbindkeys
 bsd-games
 units
 fbterm
-ttf-symbola
+noto-fonts-emoji
 unzip
 unrar
 wget
