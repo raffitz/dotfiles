@@ -2,10 +2,8 @@ local winorpane
 
 if [ -n "$TMUX" ]; then
 	winorpane="neww"
-	echo "new window"
 else
 	winorpane="new"
-	echo "new session"
 fi
 
 case $1 in
@@ -17,6 +15,9 @@ case $1 in
 		;;
 	ide)
 		tmux ${winorpane} \; splitw -h -p 34 \; splitw -t 0 -v -p 10 \; splitw -t 2 -v -p 50
+		;;
+	vert)
+		tmux $(winorpane) \; splitw -v -p 20
 		;;
 	*)
 		;;
