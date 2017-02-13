@@ -17,7 +17,7 @@ case $1 in
 		tmux ${winorpane} \; splitw -h -p 34 \; splitw -t 0 -v -p 10 \; splitw -t 2 -v -p 50
 		;;
 	vert)
-		tmux $(winorpane) \; splitw -v -p 20
+		tmux ${winorpane} \; splitw -v -p 20
 		;;
 	*)
 		;;
