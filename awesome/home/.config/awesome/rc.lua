@@ -117,7 +117,7 @@ myappsinternetmenu = {
 
 myappsmenu = {
    { "internet", myappsinternetmenu },
-   { "shutter", "shutter" },
+   { "lightscreen", "lightscreen" },
    { "vlc", "vlc" },
    { "steam", "/home/raffitz/bin/startsteam.sh" },
    { "file manager", "pcmanfm" },
