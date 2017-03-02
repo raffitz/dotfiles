@@ -1,4 +1,4 @@
 #!/bin/sh
 
-exec fbterm -v --font-names='Terminess Powerline,Symbola,Segoe UI Emoji' --cursor-shape=1
+exec fbterm -v --font-names='xos4 Terminess Powerline,Symbola,Noto Emoji' --cursor-shape=1
 

@@ -1,0 +1,24 @@
+local winorpane
+
+if [ -n "$TMUX" ]; then
+	winorpane="neww"
+else
+	winorpane="new"
+fi
+
+case $1 in
+	alpha)
+		tmux ${winorpane} \; splitw -v -p 50 \; splitw -t 0 -h -p 38 \; splitw -t 2 -h -p 38
+		;;
+	major)
+		tmux ${winorpane} \; splitw -h -p 34
+		;;
+	ide)
+		tmux ${winorpane} \; splitw -h -p 34 \; splitw -t 0 -v -p 10 \; splitw -t 2 -v -p 50
+		;;
+	vert)
+		tmux ${winorpane} \; splitw -v -p 20
+		;;
+	*)
+		;;
+esac

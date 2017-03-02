@@ -1,7 +1,15 @@
 #!/bin/zsh
 
+OWD=$(pwd)
 # Clone repo:
-git clone --recursive https://github.com/Eriner/zim.git ${ZDOTDIR:-${HOME}}/.zim
+ZIMDIR="${ZDOTDIR:-${HOME}}/.zim"
+if [ -d ${ZIMDIR} ]; then
+	cd ${ZIMDIR}
+	git pull
+	cd ${OWD}
+else
+	git clone --recursive https://github.com/Eriner/zim.git ${ZIMDIR}
+fi
 
 # Install zim:
 setopt EXTENDED_GLOB
@@ -12,14 +20,18 @@ for template_file ( ${ZDOTDIR:-${HOME}}/.zim/templates/* ); do
 done
 
 # Clone theme:
-git clone --recursive https://github.com/raffitz/simple-s.git ${ZDOTDIR:-${HOME}}/.ztheme
+THEMEDIR="${ZDOTDIR:-${HOME}}/.ztheme"
+if [ -d ${THEMEDIR} ]; then
+	cd ${THEMEDIR}
+	git pull
+	cd ${OWD}
+else
+	git clone --recursive https://github.com/raffitz/simple-s.git ${THEMEDIR}
+fi
 
 # Install theme:
 sudo cp ${ZDOTDIR:-${HOME}}/.ztheme/prompt_simple-s_setup /usr/share/zsh/functions/Prompts
 
-# Override .zimrc
-cat .zimrc > ${ZDOTDIR:-${HOME}}/.zimrc
+# Copy config files to $HOME
+cp -a home/. ~
 
-# Add stuff to .zshrc:
-
-echo "\n\nexport EDITOR=\"nvim\"\nexport VISUAL=\"nvim\"\n" >> ~/.zshrc

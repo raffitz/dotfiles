@@ -43,7 +43,7 @@ end
 --}}}
 
 --theme.font          = "-artwiz-cure-*-r-normal-*-*-*-*-*-*-*-iso8859-1"
-theme.font          = "cure 9"
+theme.font          = "artwiz cure 9"
 
 theme.bg_normal     = "#262729"
 theme.bg_focus      = "#262729"
