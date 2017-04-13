@@ -37,6 +37,8 @@ xbindkeys
 bsd-games
 units
 fbterm
+gpm
+tree
 noto-fonts-emoji
 ttf-symbola
 unzip
