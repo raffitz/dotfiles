@@ -7,6 +7,10 @@ set -e
 echo "Copying /etc/ ..."
 sudo cp -r etc/* /etc/
 
+# Copy usr configs
+echo "Copying /usr/ ..."
+sudo cp -r usr/* /usr/
+
 # Copy home dotfiles
 echo "Copying $HOME/ ..."
 cp -r home/. ~/
