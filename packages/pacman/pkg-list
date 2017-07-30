@@ -29,7 +29,7 @@ ntfs-3g
 dosfstools
 htop
 artwiz-fonts
-xcompmgr
+compton
 ibus
 ibus-m17n
 numlockx

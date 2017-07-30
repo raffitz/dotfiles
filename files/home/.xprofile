@@ -6,7 +6,7 @@ xset -dpms &
 
 xbindkeys &
 
-xcompmgr &
+compton --no-fading-openclose --vsync none -r 0 -o 0 &
 
 export EDITOR=vim
 

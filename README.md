@@ -12,7 +12,7 @@ The main difference from the desktop branch is the removal of numlockx from .xpr
 
 To install all packages included in the Arch repositories, the following is needed:
 
-> cd packages
+> cd packages/pacman
 
 > ./install.sh
 
@@ -22,7 +22,7 @@ Further, the _xf86-video_ package associated to your graphics drivers is require
 
 To install the _packer_ front-end, and subsequently install other AUR packages, the following is needed:
 
-> cd packer
+> cd packages/packer
 
 > ./install.sh
 
