@@ -110,9 +110,8 @@ myawesomemenu = {
 }
 
 myappsinternetmenu = {
-   { "browser", "chrome" },
-   { "telegram", "telegram-desktop" },
-   { "slack", "slack" }
+   { "browser", "firefox" },
+   { "telegram", "telegram-desktop" }
 }
 
 myappsmenu = {
