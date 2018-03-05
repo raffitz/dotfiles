@@ -1,7 +1,7 @@
 Xcursor.theme: OpenZone_Black
 
 URxvt*.depth: 32
-URxvt*font:  xft:xos4 Terminess Powerline:size=11, xft:Noto Emoji:size=5
+URxvt*font:  xft:DejaVu Sans Mono for Powerline:size=9
 URxvt*scrollBar: false
 
 
