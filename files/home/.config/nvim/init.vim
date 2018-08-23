@@ -52,3 +52,7 @@ set hidden
 " Whenever words are added to the dictionary, a local version is preferred by
 " default
 set spellfile=./en.utf-8.add
+
+" Always have context
+set scrolloff=1
+
