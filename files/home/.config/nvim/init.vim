@@ -56,3 +56,5 @@ set spellfile=./en.utf-8.add
 " Always have context
 set scrolloff=1
 
+" Paste mode toggle
+set pastetoggle=

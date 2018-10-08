@@ -111,7 +111,8 @@ myawesomemenu = {
 
 myappsinternetmenu = {
    { "browser", "firefox" },
-   { "telegram", "telegram-desktop" }
+   { "telegram", "telegram-desktop" },
+   { "signal", "signal-desktop" }
 }
 
 myappsmenu = {

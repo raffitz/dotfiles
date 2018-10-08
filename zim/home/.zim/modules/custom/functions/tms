@@ -14,7 +14,10 @@ case $1 in
 		tmux ${winorpane} \; splitw -h -p 34
 		;;
 	ide)
-		tmux ${winorpane} \; splitw -h -p 34 \; splitw -t 0 -v -p 10 \; splitw -t 2 -v -p 50
+		tmux ${winorpane} \; splitw -h -p 34 \; splitw -t 0 -v -p 10 \; splitw -t 2 -v -p 50 \; select-pane -U \; select-pane -L
+		;;
+	idez)
+		tmux ${winorpane} \; splitw -h -p 34 \; splitw -t 0 -v -p 10 \; splitw -t 2 -v -p 50 \; select-pane -U \; select-pane -L \; resize-pane -Z
 		;;
 	vert)
 		tmux ${winorpane} \; splitw -v -p 20
